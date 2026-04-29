@@ -28,7 +28,7 @@ Built with **Streamlit**, **LangChain**, **HuggingFace embeddings**, and **Chrom
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/Druva4444/pdf-chatbot-ai.git
+git clone https://github.com/venu-gopal12/Pdf-ChatbotAI.git
 cd pdf-chatbot-ai
 ```
 
