@@ -1,7 +1,7 @@
 # 📚 Chat With Your PDFs
 
 An interactive **AI-powered chatbot** that lets you upload one or more PDF files, process them into a searchable vector database, and ask questions about their content in natural language.  
-Built with **Streamlit**, **LangChain**, **HuggingFace embeddings**, and **ChromaDB**.
+Built with **Streamlit**, **LangChain**, **Groq (Llama 3.1)**, **HuggingFace embeddings**, and **ChromaDB**.
 
 ---
 
@@ -10,9 +10,9 @@ Built with **Streamlit**, **LangChain**, **HuggingFace embeddings**, and **Chrom
 - 📂 **Upload multiple PDFs** at once.
 - 🔍 **Automatic text extraction** from PDF pages.
 - ✂ **Chunking** of large text for better search.
-- 🧠 **Vector embeddings** using HuggingFace BGE embeddings.
+- 🧠 **Vector embeddings** using HuggingFace all-MiniLM-L6-v2 embeddings.
 - 📦 **ChromaDB** for fast semantic search.
-- 💬 **Conversational chat** with memory of previous messages.
+- 💬 **Conversational chat** using Llama 3.1 (via Groq API) with memory of previous messages.
 - ⚡ **Streamlit UI** for an easy-to-use interface.
 
 ---
@@ -46,6 +46,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### 4️⃣ Set up environment variables
+Create a `.env` file in the project directory and add your Groq API key:
+```ini
+GROQ_API_KEY=your_groq_api_key_here
+```
+
 ---
 
 ## 📦 Requirements
@@ -55,9 +61,13 @@ Your `requirements.txt` should include:
 streamlit
 PyPDF2
 langchain
+langchain-community
+langchain-text-splitters
 chromadb
 sentence-transformers
 huggingface-hub
+langchain-groq
+python-dotenv
 ```
 
 ---
@@ -92,8 +102,8 @@ chat-with-your-pdfs/
 - **Frontend & UI**: [Streamlit](https://streamlit.io/)
 - **Text Extraction**: [PyPDF2](https://pypi.org/project/PyPDF2/)
 - **Vector Database**: [ChromaDB](https://www.trychroma.com/)
-- **Embeddings**: [HuggingFace BGE](https://huggingface.co/)
-- **LLM & Chat**: [LangChain](https://www.langchain.com/)
+- **Embeddings**: [HuggingFace (all-MiniLM-L6-v2)](https://huggingface.co/)
+- **LLM & Chat**: [LangChain](https://www.langchain.com/) & [Groq API (Llama 3.1)](https://groq.com/)
 
 ---
 
