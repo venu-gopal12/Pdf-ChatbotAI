@@ -28,8 +28,8 @@ Built with **Streamlit**, **LangChain**, **HuggingFace embeddings**, and **Chrom
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/Druva4444/pdf-chatbot-ai.git
-cd pdf-chatbot-ai
+git clone https://github.com/venu-gopal12/Pdf-ChatbotAI.git
+cd Pdf-ChatbotAI
 ```
 
 ### 2️⃣ Create a virtual environment & activate it
@@ -94,12 +94,6 @@ chat-with-your-pdfs/
 - **Vector Database**: [ChromaDB](https://www.trychroma.com/)
 - **Embeddings**: [HuggingFace BGE](https://huggingface.co/)
 - **LLM & Chat**: [LangChain](https://www.langchain.com/)
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
